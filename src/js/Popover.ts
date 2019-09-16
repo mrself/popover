@@ -82,6 +82,8 @@ export default class Popover {
 
     public setOptions(options: Options) {
         this.options = {...Popover.getInitialOptions(), ...options};
+        const dataOptions = this.options.$el.data(this.options.name);
+        this.options = {...this.options, ...dataOptions};
     }
 
     public run() {
