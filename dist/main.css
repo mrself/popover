@@ -1,0 +1,5 @@
+.mrpopover {
+  display: none; }
+  .mrpopover--open {
+    display: block; }
+
