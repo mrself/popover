@@ -1,0 +1,37 @@
+{
+  "name": "popover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/jquery": "^3.3.31",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^24.9.0",
+    "css-loader": "^3.2.0",
+    "jest": "^24.9.0",
+    "jquery": "^3.4.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "sass-loader": "^8.0.0",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "vue-loader": "^15.7.1",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
