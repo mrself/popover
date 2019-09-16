@@ -22,6 +22,11 @@ export default class Popover {
         this.instance = new Instance();
     }
 
+    public static setup() {
+        this.register();
+        this.boot();
+    }
+
     public static resetRegister() {
         this.instance = null;
     }
