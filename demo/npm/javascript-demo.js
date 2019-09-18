@@ -1,0 +1,1 @@
+const Popover = require('popover');
