@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "popover": "github:mrself/popover#v1.1.0"
+    "popover": "github:mrself/popover#v1.1.1"
   },
   "devDependencies": {
     "ts-loader": "^6.1.0",
