@@ -138,11 +138,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!*************************!*\
   !*** ./src/js/index.ts ***!
   \*************************/
-/*! no exports provided */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Popover__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popover */ \"./src/js/Popover.ts\");\n\r\nwindow.Mrpopover = _Popover__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n$.fn.extend({\r\n    mrpopover: function () {\r\n        return this.each(function (i, el) {\r\n            _Popover__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init({ $el: $(el) });\r\n        });\r\n    }\r\n});\r\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Popover__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Popover */ \"./src/js/Popover.ts\");\n\r\nwindow.Mrpopover = _Popover__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n$.fn.extend({\r\n    mrpopover: function () {\r\n        return this.each(function (i, el) {\r\n            _Popover__WEBPACK_IMPORTED_MODULE_0__[\"default\"].init({ $el: $(el) });\r\n        });\r\n    }\r\n});\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (_Popover__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\r\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
 
 /***/ }),
 

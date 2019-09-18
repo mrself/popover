@@ -11,3 +11,5 @@ $.fn.extend({
         });
     }
 });
+
+export default Popover;
