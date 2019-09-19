@@ -14,8 +14,10 @@ module.exports = {
             },
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
-                use: 'ts-loader'
+                loader: 'ts-loader',
+                options: {
+                    allowTsInNodeModules: true
+                }
             }
         ]
     },

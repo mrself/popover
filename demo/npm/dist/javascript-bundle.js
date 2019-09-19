@@ -104,7 +104,7 @@ eval("var Popover = __webpack_require__(/*! popover */ \"./node_modules/popover/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports.Popover = __webpack_require__(/*! ./src/js/Popover */ \"./node_modules/popover/src/js/Popover.ts\");\n\n//# sourceURL=webpack:///./node_modules/popover/index.js?");
+eval("exports.Popover = __webpack_require__(/*! ./src/js/Popover */ \"./node_modules/popover/src/js/Popover.ts\");\r\n\n\n//# sourceURL=webpack:///./node_modules/popover/index.js?");
 
 /***/ }),
 
