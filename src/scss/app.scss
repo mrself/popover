@@ -4,4 +4,17 @@
   &--open {
     display: block;
   }
+
+  &--right {
+    right: 0;
+  }
+}
+
+.mrpopoverContainer {
+  position: relative;
+
+  .mrpopover {
+    position: absolute;
+    top: 100%;
+  }
 }

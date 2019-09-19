@@ -87,15 +87,36 @@ export default class Popover {
 
     public setOptions(options: Options) {
         this.options = {...Popover.getInitialOptions(), ...options};
-        const dataOptions = this.options.$el.data(this.options.name);
-        this.options = {...this.options, ...dataOptions};
     }
 
     public run() {
         this.$el = this.options.$el;
+        if (this.options.container) {
+            this.runFromContainer()
+        }
+        this.setOptionsFromDataAttr();
         this.id = this.$el.attr('id');
         this.defineTrigger();
         this.initEventByTrigger();
+    }
+
+    protected setOptionsFromDataAttr() {
+        const dataOptions = this.$el.data(this.options.name);
+        this.options = {...this.options, ...dataOptions};
+    }
+
+    protected runFromContainer() {
+        let container = this.options.container;
+        if (typeof container  === 'string') {
+            container = $(container);
+        }
+
+        this.$el = container.find('.mrpopover');
+        // this.$trigger = container.find('.mrpopoverContainer__trigger');
+    }
+
+    protected runFromElement() {
+
     }
 
     protected initEventByTrigger() {

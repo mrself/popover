@@ -27,6 +27,9 @@ export default class Popover {
     getId(): string;
     setOptions(options: Options): void;
     run(): void;
+    protected setOptionsFromDataAttr(): void;
+    protected runFromContainer(): void;
+    protected runFromElement(): void;
     protected initEventByTrigger(): void;
     protected initClickEvent(): void;
     protected initHoverEvent(): void;

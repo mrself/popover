@@ -8,20 +8,58 @@
     <title>Popover</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <style>
+        .mrpopoverContainer {
+            display: inline-block;
+        }
+
+        .mrpopover {
+            width: 350px;
+        }
+    </style>
 </head>
 <body>
-<div class="btn-group">
-    <div class="btn btn-secondary" data-mrpopover-target="popover-click">Click</div>
-    <div class="btn btn-secondary" data-mrpopover-target="popover-hover">Hover</div>
-</div>
-<div class="card mrpopover col-sm-4" id="popover-click" data-mrpopover='{"triggerType": "CLICK"}'>
-    <div class="card-body">
-        <div class="card-title">Click title</div>
-    </div>
-</div>
-<div class="card mrpopover col-sm-4" id="popover-hover" data-mrpopover='{"triggerType": "HOVER"}'>
-    <div class="card-body">
-        <div class="card-title">Hover title</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="btn btn-secondary" data-mrpopover-target="popover-click">Click</div>
+            <div class="card mrpopover" id="popover-click" data-mrpopover='{"triggerType": "CLICK"}'>
+                <div class="card-body">
+                    <div class="card-title">Click title</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="btn btn-secondary" data-mrpopover-target="popover-hover">Hover</div>
+            <div class="card mrpopover" id="popover-hover" data-mrpopover='{"triggerType": "HOVER"}'>
+                <div class="card-body">
+                    <div class="card-title">Hover title</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="rightMrpopoverContainer mrpopoverContainer">
+                <div class="btn btn-secondary" data-mrpopover-target="popover-container-right">Container right</div>
+                <div class="card mrpopover mrpopover--right" id="popover-container-right" data-mrpopover='{"triggerType": "CLICK"}'>
+                    <div class="card-body ">
+                        <div class="card-title">Container with right position</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="leftMrpopoverContainer mrpopoverContainer">
+                <div class="btn btn-secondary" data-mrpopover-target="popover-container-left">Container left</div>
+                <div class="card mrpopover" id="popover-container-left" data-mrpopover='{"triggerType": "CLICK"}'>
+                    <div class="card-body">
+                        <div class="card-title">Container with left position</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -29,6 +67,12 @@
 <script src="bundle.js"></script>
 <script>
     Mrpopover.setup();
+    Mrpopover.init({
+        container: '.rightMrpopoverContainer'
+    });
+    Mrpopover.init({
+        container: '.leftMrpopoverContainer'
+    });
 </script>
 </body>
 </html>

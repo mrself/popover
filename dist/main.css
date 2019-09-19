@@ -2,4 +2,12 @@
   display: none; }
   .mrpopover--open {
     display: block; }
+  .mrpopover--right {
+    right: 0; }
+
+.mrpopoverContainer {
+  position: relative; }
+  .mrpopoverContainer .mrpopover {
+    position: absolute;
+    top: 100%; }
 
