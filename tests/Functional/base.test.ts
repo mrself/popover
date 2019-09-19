@@ -5,7 +5,7 @@ import {TriggerType} from "@src/TriggerType";
 test('it adds new instance to static instance', () => {
     $('body').append(`
         <div class="mrpopover" id="id"></div>
-        <div data-mrpopup-target="id"></div>
+        <div data-mrpopover-target="id"></div>
     `);
 
     Popover.init({$el: $('.mrpopover'), triggerType: TriggerType.Hover});
