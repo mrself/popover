@@ -2,8 +2,8 @@
   "name": "popover",
   "version": "1.2.0",
   "description": "",
-  "main": "index.js",
-  "types": "typings/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "vue": "^2.6.10"
   },
@@ -32,7 +32,8 @@
     "webpack-cli": "^3.3.8"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && webpack --mode=production"
   },
   "author": "",
   "license": "ISC"

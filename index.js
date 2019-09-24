@@ -1,1 +1,0 @@
-exports.Popover = require('./src/js/Popover');

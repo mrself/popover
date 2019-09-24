@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./typings/",
+    "outDir": "./lib/",
     "noImplicitAny": true,
     "module": "es2015",
-    "target": "es5",
+    "target": "es2015",
     "jsx": "react",
     "esModuleInterop": true,
     "baseUrl": "./",
+    "moduleResolution": "node",
     "paths": {
       "@src/*": ["src/js/*"]
     },
